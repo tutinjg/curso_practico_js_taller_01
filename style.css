@@ -24,3 +24,8 @@ header > h1 {
 header > p {
     font-size: 1.9rem;
 }
+.example {
+    height: 48px;
+    width: 48px;
+    background-color: deeppink;
+}

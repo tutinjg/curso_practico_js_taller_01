@@ -29,7 +29,7 @@ function calcularAreaCuadrado (){
 console.group("Triángulos");
 
 function perimetroTriangulo (lado1, lado2, base) {
-  return lado1 + lado2 + base;
+  return ((Number(lado1)) + (Number(lado2)) + (Number(base)));
 }
 function areaTriangulo(base, altura) {
   return (base * altura) / 2;
@@ -57,5 +57,37 @@ function calcularAreaTriangulo (){
     const inputAltura = document.getElementById("InputTrianguloAltura");
     const valueAltura = inputAltura.value;
     const area = areaTriangulo (valueBase, valueAltura);
+    alert(area);
+}
+
+// Código del círculo
+console.group("Círculos");
+
+function diametroCirculo (radio) {
+    return radio * 2;
+}
+const PI = Math.PI;
+function perimetroCirculo(radio) {
+    const diametro = diametroCirculo(radio);
+    return diametro * PI;
+}
+function areaCirculo(radio) {
+  return (radio * radio * PI);
+}
+console.groupEnd();
+
+// Código para calcular el perimetro del cuadrado
+function calcularPerimetroCuadrado (){
+    const input = document.getElementById("InputCuadrado");
+    const value = input.value;
+    const perimetro = perimetroCuadrado(value);
+    alert(perimetro);
+}
+
+// Código para calcular el área del cuadrado
+function calcularAreaCuadrado (){
+    const input = document.getElementById("InputCuadrado");
+    const value = input.value;
+    const area = areaCuadrado(value);
     alert(area);
 }

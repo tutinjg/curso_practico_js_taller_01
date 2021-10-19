@@ -17,15 +17,16 @@
         <section>
 <!-- Código para calcular área y perímetro del cuadrado    -->
         <h2>Calcula el área y perímetro de un cuadrado</h2>
+        <img src="./img/square.png" alt="Square">
             <form action="" title="Medidas del Cuadrado">
                 <label for="InputCuadrado">
                 <span><b></b>Escribe la medida deseada para los lados del cuadrado</b></span>
                 <input type="number" id="InputCuadrado" required="">
                 <button type="button" onclick="calcularPerimetroCuadrado()">
-                    Calcular el perímetro
+                    Perímetro
                 </button>
                 <button type="button" onclick="calcularAreaCuadrado()">
-                    Calcular el área
+                    Área
                 </button>
                 </label>
             </form>
@@ -33,6 +34,7 @@
         <section>
 <!-- Código para calcular área y perímetro del triángulo    -->
         <h2><b>Calcula el área y perímetro de un triangulo</b></h2>
+        <img src="./img/triangle.png" alt="Triangle">
             <form action="" title="Medidas del Triángulo">
                 <label for="InputTrianguloL1">
                 <span>Escribe la medida desea para el lado 1 del triángulo</span>
@@ -61,8 +63,25 @@
                     Área
                 </button>  
             </form>
-        </section>
+        </section> <br> <br>
+        <section>
+<!-- Código para calcular área y perímetro del círculo    -->
+        <h2>Calcula el área y perímetro de un círculo</h2>
+            <form action="" title="Medidas del Círculo">
+                <label for="InputCirculo">
+                <span><b></b>Escribe la medida deseada para el radio del círculo</b></span>
+                <input type="number" id="InputCirculo" required="">
+                <button type="button" onclick="calcularPerimetroCirculo()">
+                    Perímetro
+                </button>
+                <button type="button" onclick="calcularAreaCirculo()">
+                    Área
+                </button>
+                </label>
+            </form>
+        </section> <br> <br>
     </div>
     <script src="./script.js" type="text/javascript"></script>
     </body>
+    <div class="example"></div>
 </html>
